@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./Assets/css/style.css">
+      <title>Mark vs Math</title>
+  </head>
+  <body>
+      <h1 class="quizTitle">You Can Do It!</h1>
+      <div class="titleScreen">
+        <p>
+          Answer these multiple choice questions to the best of your ability! <br>
+          Good Luck!
+        </p>
+        <div class="centerAlign">
+          <h2 class="hsTitle">High Scores</h2>
+          <ol class="playerScores"></ol>
+        </div>
+      </div>
+      <div>
+        <button class="resetButton" class="btn">RESET SCORES</button>
+      </div>
+      <div style="padding-top: 1rem;">
+        <button class="startButton" class="btn">START QUIZ</button>
+      </div>
+
+      <!-- Game Screen -->
+      <section class="gameScreen">
+        <!-- Display the timer
+        <div class="timerElement"> -->
+                  <!-- Display the timer -->
+        <div class="qNumberElement">
+          <p></p>
+        </div>
+
+        <!-- Display the score -->
+        <div class="scoreElement">
+          <p></p>
+        </div>
+
+        <div class="questions">
+          <!-- Question -->
+          <h2 class="questionText" style="text-align: center;
+          font-size:3rem;"></h2>
+          <!-- Options -->
+          <div style="display:flex;">
+            <div class="answerDiv buttonA1" style="height:4rem;width:4rem;display:grid;font-size:2rem;"></div>
+            <div class="answerDiv buttonA2" style="height:4rem;width:4rem;display:grid;font-size:2rem;"></div>
+          </div>
+          <div style="display:flex;">
+            <div class="answerDiv buttonA3" style="height:4rem;width:4rem;display:grid;font-size:2rem;"></div>
+            <div class="answerDiv buttonA4" style="height:4rem;width:4rem;display:grid;font-size:2rem;"></div>
+          </div>
+        </div>
+      </section>
+      <!-- HighScore Screen -->
+      <section class="submitScreen">
+        <!-- Textbox to write your name and a button to submit it-->
+        <form method="POST">
+          <label for="nameSubmit">Please enter your name: </label>
+          <input type="text" id="nameSubmit" name="nameSubmit" placeholder="J. K. Rowling"/>
+        </form>
+        <div class="centerContent">
+          <button class="submitButton" class="btn">SUBMIT</button>
+        </div>
+      </section>
+      <script src="./Assets/js/script.js"></script>
+  </body>
+</html>
